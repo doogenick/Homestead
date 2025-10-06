@@ -1,0 +1,88 @@
+{
+  "title": "🌱 Garden & Chickens Setup (Days 11-13)",
+  "goal": "Establish a small productive garden and chicken area to provide fresh vegetables, herbs, and eggs for the family.",
+  "materials": [
+    { "name": "Chicken coop (4m x 3m)", "cost": "R3,500", "quantity": 1 },
+    { "name": "20–30 laying hens", "cost": "R2,500", "quantity": 1 batch },
+    { "name": "Chicken feed (20kg bags)", "cost": "R350", "quantity": 3 },
+    { "name": "Water troughs for chickens", "cost": "R450", "quantity": 2 },
+    { "name": "Seeds (vegetables & herbs)", "cost": "R600", "quantity": 1 batch },
+    { "name": "Garden tools (spade, hoe, rake, watering can)", "cost": "R800", "quantity": 1 set },
+    { "name": "Compost / mulch", "cost": "R300", "quantity": 1 cubic meter" },
+    { "name": "Netting / fencing for garden", "cost": "R650", "quantity": 20 meters }
+  ],
+  "tools": [
+    "Shovel / spade",
+    "Hoe",
+    "Rake",
+    "Watering can or hose",
+    "Wheelbarrow",
+    "Pruning shears",
+    "Gloves"
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "title": "Select Garden and Chicken Area",
+      "description": "Choose sunny, level ground near water source. Keep chicken area downwind of tents."
+    },
+    {
+      "step_number": 2,
+      "title": "Prepare Garden Beds",
+      "description": "Mark garden plots. Loosen soil using spade or hoe. Mix in compost to improve fertility."
+    },
+    {
+      "step_number": 3,
+      "title": "Plant Seeds and Herbs",
+      "description": "Plant quick-growing vegetables (lettuce, radish, spinach) and herbs (basil, parsley, coriander). Follow spacing instructions on seed packets."
+    },
+    {
+      "step_number": 4,
+      "title": "Build Chicken Coop",
+      "description": "Assemble coop according to plans. Ensure secure doors and windows with mesh. Include nesting boxes for hens."
+    },
+    {
+      "step_number": 5,
+      "title": "Install Water and Feed Stations",
+      "description": "Place water troughs and feeders inside coop. Refill daily. Ensure no contamination of water."
+    },
+    {
+      "step_number": 6,
+      "title": "Fence Chicken & Garden Areas",
+      "description": "Install netting around garden to protect from chickens and wildlife. Keep chickens within coop/pen area during night."
+    },
+    {
+      "step_number": 7,
+      "title": "Introduce Hens",
+      "description": "Bring hens into the coop. Allow them to explore pen area gradually. Monitor for signs of stress or illness."
+    },
+    {
+      "step_number": 8,
+      "title": "Watering and Maintenance",
+      "description": "Water garden daily or every second day depending on rainfall. Rotate chicken bedding weekly, collect eggs daily."
+    },
+    {
+      "step_number": 9,
+      "title": "Harvesting",
+      "description": "Begin harvesting quick-growing crops after 3–4 weeks. Collect eggs daily and rotate feed for hens."
+    }
+  ],
+  "tips": [
+    { "type": "tip", "content": "💡 Companion planting improves yields and deters pests." },
+    { "type": "tip", "content": "💡 Use mulch around garden beds to retain moisture." },
+    { "type": "tip", "content": "💡 Introduce chickens gradually to garden if free-ranging to prevent damage." },
+    { "type": "tip", "content": "💡 Rotate crops in the garden to avoid soil depletion." }
+  ],
+  "safety": [
+    "Wear gloves when handling soil, compost, or manure.",
+    "Ensure chickens are securely enclosed at night to prevent predation.",
+    "Keep feed dry to prevent mold.",
+    "Wash hands after handling eggs or chickens."
+  ],
+  "images": [
+    { "name": "garden_layout.jpg", "description": "Garden beds positioned near water source." },
+    { "name": "chicken_coop.jpg", "description": "Chicken coop with secure fencing and nesting boxes." },
+    { "name": "vegetables_seedlings.jpg", "description": "Quick-growing vegetable seedlings planted in beds." }
+  ],
+  "estimated_time": "12–14 hours over 3 days"
+}

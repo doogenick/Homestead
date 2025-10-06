@@ -1,0 +1,86 @@
+{
+  "title": "🏕️ Shelter Setup (Days 1-3)",
+  "goal": "Provide safe, weather-resistant, and comfortable sleeping and storage areas for Phase 1, while keeping options flexible for future expansion.",
+  "materials": [
+    { "name": "2x Canvas safari tents (4m x 3m)", "cost": "R4,500", "quantity": 2 },
+    { "name": "Wooden pallets (10 units) for flooring", "cost": "R800", "quantity": 10 },
+    { "name": "Shade netting (10m x 5m)", "cost": "R450", "quantity": 1 },
+    { "name": "Tent pegs and guy ropes (heavy duty)", "cost": "R250", "quantity": 1 },
+    { "name": "Tarpaulins (3x heavy duty, 6m x 4m)", "cost": "R750", "quantity": 3 },
+    { "name": "Cable ties, rope, bungee cords", "cost": "R200", "quantity": "assorted" },
+    { "name": "Basic insulation (cardboard/foam sheets)", "cost": "R300", "quantity": 1 },
+    { "name": "Battery-powered LED lights (4 units)", "cost": "R400", "quantity": 4 },
+    { "name": "Shipping container (for storage/emergency shelter)", "cost": "R20,000", "quantity": 1 },
+    { "name": "Metal shelving units (optional)", "cost": "R1,500", "quantity": 2 }
+  ],
+  "tools": [
+    "Spirit level",
+    "Hammer",
+    "Cordless drill",
+    "Tape measure",
+    "Shovel",
+    "Utility knife",
+    "Ladder",
+    "Safety gloves"
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "title": "Prepare Shelter Area",
+      "description": "Select level ground at least 10m from the container and water sources. Clear rocks, sticks, and vegetation. Slightly slope the area for drainage."
+    },
+    {
+      "step_number": 2,
+      "title": "Clean & Organize Container",
+      "description": "Sweep out debris. Inspect for rust, holes, and damage. Apply rust converter if needed. Install louver vents near roof level on opposite sides for ventilation."
+    },
+    {
+      "step_number": 3,
+      "title": "Create Storage Zones",
+      "description": "Left side: tools and hardware. Center: emergency supplies and water. Right side: food storage. Use shelving units where possible. Leave 2m x 3m emergency sleeping space clear."
+    },
+    {
+      "step_number": 4,
+      "title": "Construct Tent Platforms",
+      "description": "Use pallets to build raised floors. Level each pallet with stones or blocks. Cover with plywood sheets for smoother surface and insulation."
+    },
+    {
+      "step_number": 5,
+      "title": "Erect Canvas Tents",
+      "description": "Follow manufacturer instructions. Secure guy ropes tightly. Angle tents to allow proper wind flow. Attach additional tarpaulin over tents with 200mm air gap for rain protection."
+    },
+    {
+      "step_number": 6,
+      "title": "Install Shade Structures",
+      "description": "Erect poles 3m high on north and west sides. Attach shade netting to reduce direct sun by ~40%. Ensure poles are stable in strong winds."
+    },
+    {
+      "step_number": 7,
+      "title": "Set up Lighting & Safety",
+      "description": "Install battery LED lights inside tents and container. Keep a fire extinguisher in container. Maintain clear pathways between tents and water/sanitation points."
+    },
+    {
+      "step_number": 8,
+      "title": "Inspection & Adjustment",
+      "description": "Check all guy ropes, tarps, and pallets for stability. Test tents against wind by shaking lightly. Ensure shade nets do not sag or tear."
+    }
+  ],
+  "tips": [
+    { "type": "tip", "content": "💡 Place tents slightly elevated to prevent flooding during heavy rain." },
+    { "type": "tip", "content": "💡 Keep container doors unlocked during daytime for ventilation, but lock at night for security." },
+    { "type": "tip", "content": "💡 Rotate mattress and bedding weekly to prevent dampness and mold." },
+    { "type": "tip", "content": "💡 Consider reflective tarpaulin over tents in summer to reduce heat inside." }
+  ],
+  "safety": [
+    "Always wear gloves when handling pallets and metal shelving.",
+    "Secure ladders before climbing to mount vents or shade structures.",
+    "Check weather forecast before erecting tents to avoid high wind accidents.",
+    "Keep fire sources away from tents and dry tarpaulins."
+  ],
+  "images": [
+    { "name": "tent_setup.jpg", "description": "Canvas tent layout with pallets and tarpaulin roof." },
+    { "name": "container_storage.jpg", "description": "Organized shipping container with storage zones." },
+    { "name": "shade_net_structure.jpg", "description": "Poles and shade net positioning." }
+  ],
+  "estimated_time": "18–24 hours total over 3 days, including breaks and drying/curing times"
+}

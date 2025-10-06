@@ -1,0 +1,79 @@
+{
+  "title": "🍳 Kitchen & Gazebo Setup (Days 8-10)",
+  "goal": "Establish a functional cooking and food prep area with shelter from sun and rain, near water and storage areas for convenience.",
+  "materials": [
+    { "name": "Heavy-duty gazebo frame (3m x 3m)", "cost": "R2,500", "quantity": 1 },
+    { "name": "Tarpaulin cover (6m x 4m)", "cost": "R750", "quantity": 1 },
+    { "name": "Portable camping stove / gas burner", "cost": "R1,500", "quantity": 1 },
+    { "name": "Metal table for prep", "cost": "R800", "quantity": 1 },
+    { "name": "Storage shelves / crates", "cost": "R1,000", "quantity": 3 },
+    { "name": "Waterproof containers for food storage", "cost": "R500", "quantity": 5 },
+    { "name": "Compost bin / bucket for organic waste", "cost": "R250", "quantity": 1 },
+    { "name": "Cutting boards, knives, utensils", "cost": "R600", "quantity": 1 set },
+    { "name": "Fire extinguisher (2kg)", "cost": "R400", "quantity": 1 }
+  ],
+  "tools": [
+    "Hammer",
+    "Screwdriver",
+    "Utility knife",
+    "Measuring tape",
+    "Cord / rope",
+    "Level",
+    "Drill"
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "title": "Select Kitchen Location",
+      "description": "Choose a flat area close to water source and storage container. Ensure drainage and some natural shade if possible."
+    },
+    {
+      "step_number": 2,
+      "title": "Assemble Gazebo Frame",
+      "description": "Follow manufacturer instructions to assemble metal frame. Use extra stakes or ropes to secure against wind."
+    },
+    {
+      "step_number": 3,
+      "title": "Attach Tarpaulin Cover",
+      "description": "Stretch tarpaulin over frame tightly. Ensure corners are anchored with ropes and pegs. Leave slight slope for rainwater runoff."
+    },
+    {
+      "step_number": 4,
+      "title": "Set Up Cooking Station",
+      "description": "Place stove / gas burner on stable surface. Keep fire extinguisher nearby. Ensure ventilation for smoke and gas safety."
+    },
+    {
+      "step_number": 5,
+      "title": "Install Prep & Storage Areas",
+      "description": "Set metal table for cutting and prep. Place crates or shelves for dry food storage, cooking utensils, and cleaning materials."
+    },
+    {
+      "step_number": 6,
+      "title": "Set Up Waste Management",
+      "description": "Position compost bin near kitchen but away from tents. Clearly mark bins for organic and non-organic waste."
+    },
+    {
+      "step_number": 7,
+      "title": "Test and Organize",
+      "description": "Test stove for stability and ventilation. Arrange utensils and storage for easy access. Verify rainwater flows away from kitchen area."
+    }
+  ],
+  "tips": [
+    { "type": "tip", "content": "💡 Use ropes and extra pegs to prevent gazebo lifting during Beaufort West winds." },
+    { "type": "tip", "content": "💡 Store fuel away from cooking area in metal containers." },
+    { "type": "tip", "content": "💡 Keep a small bucket of water nearby as extra fire safety measure." },
+    { "type": "tip", "content": "💡 Consider hanging shade cloth on sides if wind carries dust or sand." }
+  ],
+  "safety": [
+    "Ensure stove is on level surface to avoid tipping.",
+    "Keep flammable materials away from burner.",
+    "Use gloves when handling hot surfaces or tarpaulin.",
+    "Install fire extinguisher and know its operation."
+  ],
+  "images": [
+    { "name": "gazebo_layout.jpg", "description": "Gazebo positioned near water source and storage." },
+    { "name": "stove_setup.jpg", "description": "Portable stove setup with prep table." },
+    { "name": "storage_organization.jpg", "description": "Crates and shelves arranged for easy access." }
+  ],
+  "estimated_time": "10–12 hours over 3 days for full setup"
+}

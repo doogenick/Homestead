@@ -1,0 +1,14 @@
+{
+  "title": "Vegetable Garden & Planting (Days 8-10)",
+  "materials": [
+    {"name": "Raised garden beds (4 units)", "cost": "R1,200"},
+    {"name": "Compost (2m³)", "cost": "R600"},
+    {"name": "Seeds (various vegetables)", "cost": "R400"},
+    {"name": "Watering cans or hose", "cost": "R350"},
+    {"name": "Mulch (bark or straw)", "cost": "R250"},
+    {"name": "Garden tools (spade, fork, hoe)", "cost": "R450"}
+  ],
+  "steps": [
+    {"title": "Prepare garden beds", "description": "Level ground and place raised beds. Ensure good sunlight exposure."},
+    {"title": "Add soil and compost", "description": "Fill beds with 50% soil, 50% compost mixture."},
+    {"title": "Plant seeds or seedlings", "description": "Follow spacing guidelines for each plant. Water g

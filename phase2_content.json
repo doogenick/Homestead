@@ -1,0 +1,105 @@
+{
+  "Water System Expansion": {
+    "days": "1-2",
+    "materials": [
+      {"item": "Additional 2500L JoJo tank with stand", "cost": "R3,500"},
+      {"item": "HDPE pipe (40mm, 100m)", "cost": "R850"},
+      {"item": "Additional fittings (elbows, tees, valves)", "cost": "R500"},
+      {"item": "Water pump booster kit", "cost": "R1,800"}
+    ],
+    "steps": [
+      "Install second tank near garden for irrigation.",
+      "Connect booster pump to existing system to increase flow.",
+      "Run pipes to new kitchen and livestock areas.",
+      "Install additional taps and valves for independent operation."
+    ],
+    "tips": ["Use color-coded pipes for irrigation vs domestic water to avoid contamination."]
+  },
+  "Permanent Shelter": {
+    "days": "3-5",
+    "materials": [
+      {"item": "Prefabricated timber cabin kit (3x4m)", "cost": "R25,000"},
+      {"item": "Insulation sheets", "cost": "R3,000"},
+      {"item": "Roofing sheets", "cost": "R2,500"},
+      {"item": "Doors and windows", "cost": "R3,500"}
+    ],
+    "steps": [
+      "Prepare leveled foundation for cabin.",
+      "Assemble prefabricated cabin according to manufacturer.",
+      "Install insulation and roofing sheets.",
+      "Fit doors and windows; ensure airtight and secure."
+    ],
+    "tips": ["Choose north-facing windows for solar gain in winter."]
+  },
+  "Electricity & Solar Setup": {
+    "days": "3-4",
+    "materials": [
+      {"item": "Additional 200W solar panels", "cost": "R3,000"},
+      {"item": "Deep-cycle battery (200Ah)", "cost": "R5,000"},
+      {"item": "Inverter (1000W)", "cost": "R2,500"},
+      {"item": "Wiring, fuses, connectors", "cost": "R1,000"}
+    ],
+    "steps": [
+      "Install new solar panels on roof or ground frame.",
+      "Connect panels to battery bank via charge controller.",
+      "Wire inverter to supply power to cabin and work areas.",
+      "Test voltage and load with small appliances."
+    ],
+    "tips": ["Use cable conduits to protect wires from sun and rodents."]
+  },
+  "Livestock Expansion": {
+    "days": "5-6",
+    "materials": [
+      {"item": "Goat pen materials (timber, wire)", "cost": "R3,000"},
+      {"item": "6 goats (mixed breed)", "cost": "R9,000"},
+      {"item": "Pig pen materials", "cost": "R4,000"},
+      {"item": "2 pigs", "cost": "R3,500"},
+      {"item": "Feed and water troughs", "cost": "R1,500"}
+    ],
+    "steps": [
+      "Construct secure goat and pig pens near water source.",
+      "Install feeders, waterers, and shaded areas.",
+      "Introduce animals gradually; monitor health.",
+      "Rotate bedding and clean pens weekly."
+    ],
+    "tips": ["Start with fewer animals to learn management; expand gradually."]
+  },
+  "Crop Expansion": {
+    "days": "7-8",
+    "materials": [
+      {"item": "Seeds for permanent crops (corn, beans, leafy greens)", "cost": "R800"},
+      {"item": "Compost, manure, organic fertilizer", "cost": "R1,200"},
+      {"item": "Mulching material", "cost": "R500"},
+      {"item": "Drip irrigation system", "cost": "R2,500"}
+    ],
+    "steps": [
+      "Expand garden beds for seasonal and permanent crops.",
+      "Install drip irrigation from secondary water tank.",
+      "Apply compost and fertilizer to soil beds.",
+      "Mulch to retain moisture and prevent weeds."
+    ],
+    "tips": ["Plant in blocks according to sun exposure; rotate crops to improve soil."]
+  },
+  "Kitchen Upgrade": {
+    "days": "9",
+    "materials": [
+      {"item": "Outdoor brick oven or barbecue", "cost": "R3,000"},
+      {"item": "Large prep table with shelves", "cost": "R800"},
+      {"item": "Food storage cabinets", "cost": "R1,200"}
+    ],
+    "steps": [
+      "Build brick oven/barbecue near kitchen area.",
+      "Organize prep tables and storage for batch cooking.",
+      "Install rainwater catchment and sink for washing."
+    ]
+  },
+  "Schedule & Review": {
+    "days": "10-14",
+    "steps": [
+      "Inspect all systems installed in Phase 2: water, shelter, solar, livestock, garden, kitchen.",
+      "Perform maintenance on any malfunctioning equipment.",
+      "Document lessons learned for Phase 3 expansion.",
+      "Organize tools, leftover materials, and storage for future use."
+    ]
+  }
+}

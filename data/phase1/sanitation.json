@@ -1,0 +1,94 @@
+{
+  "title": "🚿 Sanitation Systems (Days 3-4)",
+  "goal": "Provide safe, hygienic, and sustainable sanitation solutions including a composting toilet and fire bath/shower, suitable for self-setup and low maintenance.",
+  "materials": [
+    { "name": "IBR sheets for toilet structure (10 sheets)", "cost": "R850", "quantity": 10 },
+    { "name": "Treated timber frame (38x76mm)", "cost": "R450", "quantity": 1 },
+    { "name": "Toilet seat with lid", "cost": "R180", "quantity": 1 },
+    { "name": "2x 25L buckets with lids", "cost": "R120", "quantity": 2 },
+    { "name": "Sawdust/wood shavings (3 bags)", "cost": "R150", "quantity": 3 },
+    { "name": "Hinges, screws, door latch", "cost": "R200", "quantity": 1 },
+    { "name": "Ventilation pipe (110mm PVC, 3m)", "cost": "R180", "quantity": 1 },
+    { "name": "Old steel drum (200L) for water heating", "cost": "R250", "quantity": 1 },
+    { "name": "Copper pipe (15mm, 10m)", "cost": "R380", "quantity": 1 },
+    { "name": "Shower head and mixer tap", "cost": "R420", "quantity": 1 },
+    { "name": "Fire bricks (50 units)", "cost": "R200", "quantity": 50 },
+    { "name": "Privacy screens (poles and shade cloth)", "cost": "R350", "quantity": 1 },
+    { "name": "Gravel for drainage (1m³)", "cost": "R280", "quantity": 1 }
+  ],
+  "tools": [
+    "Hammer",
+    "Cordless drill",
+    "Screwdrivers",
+    "Saw",
+    "Tape measure",
+    "Spirit level",
+    "Shovel",
+    "Protective gloves"
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "title": "Select Sanitation Location",
+      "description": "Choose a site at least 15m from water sources and living areas. Ensure good drainage and privacy."
+    },
+    {
+      "step_number": 2,
+      "title": "Build Composting Toilet Frame",
+      "description": "Construct 1.2m x 1.2m x 2.1m timber frame. Include door frame (600mm wide). Ensure frame is square and level."
+    },
+    {
+      "step_number": 3,
+      "title": "Attach IBR Sheets",
+      "description": "Secure walls and roof with screws. Overlap sheets to prevent leaks. Seal joints with silicone if necessary."
+    },
+    {
+      "step_number": 4,
+      "title": "Install Seat Box",
+      "description": "Construct 450mm high box with hinged top. Cut hole for toilet seat. Sand edges smooth. Ensure stability."
+    },
+    {
+      "step_number": 5,
+      "title": "Install Ventilation System",
+      "description": "Run 110mm PVC pipe from below seat to 500mm above roof. Add wind-driven extractor on top to reduce odor."
+    },
+    {
+      "step_number": 6,
+      "title": "Set Up Bucket System",
+      "description": "Place bucket under seat. Add ~100mm sawdust after each use. Keep extra buckets for rotation and composting."
+    },
+    {
+      "step_number": 7,
+      "title": "Build Fire Bath/Shower",
+      "description": "Position 200L drum on stable bricks. Connect copper piping to shower head. Construct firebox with fire bricks. Ensure water can be safely heated and directed to shower."
+    },
+    {
+      "step_number": 8,
+      "title": "Install Privacy Screens & Drainage",
+      "description": "Set poles around shower, attach shade cloth. Add gravel to prevent waterlogging. Ensure proper drainage away from living areas."
+    },
+    {
+      "step_number": 9,
+      "title": "Inspection & Commissioning",
+      "description": "Test toilet bucket system for ease of use. Verify ventilation airflow. Light a small fire to check shower heating. Adjust as needed."
+    }
+  ],
+  "tips": [
+    { "type": "tip", "content": "💡 Always add sawdust after use to reduce odor and aid composting." },
+    { "type": "tip", "content": "💡 Compost buckets should rest in a covered area to prevent rain contamination." },
+    { "type": "tip", "content": "💡 Fire bath can double as water heating for small kitchen use if needed." },
+    { "type": "tip", "content": "💡 Inspect IBR sheet joints monthly to prevent leaks during rain." }
+  ],
+  "safety": [
+    "Handle IBR sheets with gloves to avoid cuts.",
+    "Ensure fire bricks are stable and fire is controlled.",
+    "Do not leave fire unattended during water heating.",
+    "Keep buckets out of reach of children until fully installed."
+  ],
+  "images": [
+    { "name": "compost_toilet.jpg", "description": "Completed composting toilet setup." },
+    { "name": "fire_bath.jpg", "description": "Fire bath/shower construction with copper piping." },
+    { "name": "drainage_gravel.jpg", "description": "Gravel drainage around sanitation area." }
+  ],
+  "estimated_time": "12–16 hours over 2 days, including curing and drying times"
+}

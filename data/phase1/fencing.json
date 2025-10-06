@@ -1,0 +1,79 @@
+{
+  "title": "🔒 Security & Fencing (Days 5-6)",
+  "goal": "Establish an immediate secure perimeter around the main living area to protect family, livestock, and equipment. Expandable in later phases.",
+  "materials": [
+    { "name": "Y-standard fence posts (2.1m, 40 units)", "cost": "R2,800", "quantity": 40 },
+    { "name": "Diamond mesh fencing (1.8m x 30m rolls, 4 rolls)", "cost": "R3,200", "quantity": 4 },
+    { "name": "Barbed wire (2 strands top, 500m)", "cost": "R650", "quantity": 1 },
+    { "name": "Gate kit (3m vehicle gate)", "cost": "R1,850", "quantity": 1 },
+    { "name": "Concrete for posts (15 bags)", "cost": "R750", "quantity": 15 },
+    { "name": "Wire tensioners and clips", "cost": "R350", "quantity": 1 },
+    { "name": "Solar security lights (4 units with sensors)", "cost": "R1,200", "quantity": 4 },
+    { "name": "Staple gun & staples", "cost": "R200", "quantity": 1 },
+    { "name": "Hammer & post driver", "cost": "R0", "quantity": 1 }
+  ],
+  "tools": [
+    "Tape measure",
+    "Spirit level",
+    "Shovel",
+    "Wheelbarrow",
+    "Gloves",
+    "Safety glasses",
+    "Drill with masonry bits"
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "title": "Mark Immediate Security Zone",
+      "description": "Define a 1-hectare area around the living and storage area for initial fencing. Use stakes and string to outline perimeter."
+    },
+    {
+      "step_number": 2,
+      "title": "Install Fence Posts",
+      "description": "Dig holes 60cm deep at 3–4m intervals. Insert Y-posts and set in concrete. Ensure posts are level and vertically aligned."
+    },
+    {
+      "step_number": 3,
+      "title": "Attach Diamond Mesh Fencing",
+      "description": "Unroll mesh along posts. Use tensioners and clips to secure tightly. Ensure mesh is flush with the ground to prevent animal entry."
+    },
+    {
+      "step_number": 4,
+      "title": "Install Barbed Wire",
+      "description": "Attach 2 strands along the top of posts using staples. Keep barbs away from walkways and livestock feed areas."
+    },
+    {
+      "step_number": 5,
+      "title": "Install Gate",
+      "description": "Set gate posts in concrete. Hang gate, ensuring swing is free and latch works properly. Check for smooth operation."
+    },
+    {
+      "step_number": 6,
+      "title": "Set Up Solar Security Lights",
+      "description": "Mount 4 lights around perimeter, especially near gates and storage areas. Test sensors and light coverage at night."
+    },
+    {
+      "step_number": 7,
+      "title": "Inspect and Adjust",
+      "description": "Walk perimeter checking for gaps, sagging mesh, loose posts, or areas where animals can enter. Reinforce weak points."
+    }
+  ],
+  "tips": [
+    { "type": "tip", "content": "💡 Stretch fencing tightly to prevent sagging over time." },
+    { "type": "tip", "content": "💡 Keep a few extra Y-posts and clips for quick repairs." },
+    { "type": "tip", "content": "💡 Solar lights can be relocated as perimeter expands in Phase 2." },
+    { "type": "tip", "content": "💡 Check fence tension monthly, especially after strong winds." }
+  ],
+  "safety": [
+    "Wear gloves when handling barbed wire to prevent cuts.",
+    "Wear safety glasses when cutting fencing or using hammer/drill.",
+    "Concrete handling requires gloves and careful mixing to prevent skin irritation.",
+    "Keep children and pets away from work area during installation."
+  ],
+  "images": [
+    { "name": "fence_layout.jpg", "description": "Perimeter layout for immediate security." },
+    { "name": "mesh_attachment.jpg", "description": "Diamond mesh fencing installation detail." },
+    { "name": "solar_lights.jpg", "description": "Solar security lights mounted on posts." }
+  ],
+  "estimated_time": "12–14 hours over 2 days for 1-hectare immediate zone"
+}

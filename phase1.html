@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 1 - Beaufort West Homestead</title>
+    <meta name="description" content="Phase 1: 14-day essential homestead setup including water, shelter, sanitation, security, kitchen, chickens, and garden.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="index.html">🏡 Home</a>
+            <a href="phase1.html" class="active" aria-current="page">Phase 1</a>
+            <a href="phase2.html">Phase 2</a>
+            <a href="phase3.html">Phase 3</a>
+            <a href="phase4.html">Phase 4</a>
+        </nav>
+
+        <header>
+            <h1>Phase 1 – Essentials</h1>
+            <p>14-Day DIY Homestead Setup</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Phase 1 sections">
+            <button class="tab active" data-section="water" role="tab" aria-selected="true">💧 Water</button>
+            <button class="tab" data-section="shelter" role="tab" aria-selected="false">🏕️ Shelter</button>
+            <button class="tab" data-section="sanitation" role="tab" aria-selected="false">🚿 Sanitation</button>
+            <button class="tab" data-section="fencing" role="tab" aria-selected="false">🔒 Security</button>
+            <button class="tab" data-section="kitchen" role="tab" aria-selected="false">🍳 Kitchen</button>
+            <button class="tab" data-section="chickens" role="tab" aria-selected="false">🐔 Chickens</button>
+            <button class="tab" data-section="garden" role="tab" aria-selected="false">🌱 Garden</button>
+            <button class="tab" data-section="schedule" role="tab" aria-selected="false">📅 Schedule</button>
+        </div>
+
+        <div id="content" class="content" role="tabpanel" aria-live="polite">
+            <!-- Dynamic content will load here -->
+            <div class="loading">Loading content</div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "title": "Phase 1 Schedule Overview (Days 1-14)",
+  "timeline": [
+    {"day": "1-2", "priority": "high", "activity": "Water System Installation"},
+    {"day": "3-4", "priority": "high", "activity": "Shelter Setup & Sanitation"},
+    {"day": "5-6", "priority": "medium", "activity": "Security & Fencing"},
+    {"day": "6-7", "priority": "medium", "activity": "Kitchen Setup"},
+    {"day": "7-8", "priority": "medium", "activity": "Chicken Coop & Poultry"},
+    {"day": "8-10", "priority": "low", "activity": "Vegetable Garden"},
+    {"day": "11-14", "priority": "low", "activity": "Additional Projects / Finishing Touches"}
+  ]
+}
