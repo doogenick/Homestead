@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Fetch</title>
+</head>
+<body>
+    <h1>Fetch Test</h1>
+    <div id="result"></div>
+    <script>
+        fetch('../data/phase1/water.json')
+            .then(response => {
+                document.getElementById('result').innerHTML = 'SUCCESS: ' + response.status;
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('result').innerHTML += '<br>Title: ' + data.title;
+            })
+            .catch(error => {
+                document.getElementById('result').innerHTML = 'ERROR: ' + error.message;
+                console.error('Fetch error:', error);
+            });
+    </script>
+</body>
+</html>

@@ -1,78 +1,201 @@
 {
-  "title": "Water System Installation",
+  "title": "🏗️ Water System & Basic Infrastructure",
   "phase": "Phase 1",
   "days": "1-2",
-  "goal": "Ensure reliable access to potable water for family, garden, and livestock using the borehole and solar-powered pumping system.",
+  "goal": "Establish a fully functional, solar-powered water supply system for the homestead — including borehole setup, storage, plumbing, and power integration — ensuring clean, reliable water access for all subsequent construction and agricultural phases.",
   "materials": [
-    {"item": "Solar submersible pump kit (24V, 3m³/hr minimum)", "quantity": 1, "unit": "kit", "cost": 8500},
-    {"item": "2x 100W solar panels with mounting brackets", "quantity": 2, "unit": "panels", "cost": 3200},
-    {"item": "MPPT solar controller (24V, 20A)", "quantity": 1, "unit": "unit", "cost": 1200},
-    {"item": "2500L JoJo tank with stand", "quantity": 1, "unit": "tank", "cost": 3500},
-    {"item": "40mm HDPE pipe (100m roll)", "quantity": 1, "unit": "roll", "cost": 850},
-    {"item": "Various fittings (elbows, tees, valves)", "quantity": 1, "unit": "set", "cost": 650},
-    {"item": "Cable (submersible rated, 50m)", "quantity": 1, "unit": "length", "cost": 450},
-    {"item": "Float valve for tank", "quantity": 1, "unit": "unit", "cost": 180},
-    {"item": "Basic water filter", "quantity": 1, "unit": "unit", "cost": 320},
-    {"item": "Cement for tank base (4 bags)", "quantity": 4, "unit": "bags", "cost": 280}
+    {"item": "Solar submersible pump kit (500W-750W)", "quantity": 1, "unit": "kit", "cost": 18500},
+    {"item": "Solar panels (2x 200W monocrystalline)", "quantity": 2, "unit": "panels", "cost": 4000},
+    {"item": "MPPT solar controller", "quantity": 1, "unit": "unit", "cost": 1500},
+    {"item": "JoJo vertical tank (2,500L)", "quantity": 1, "unit": "tank", "cost": 3900},
+    {"item": "HDPE pipe (32mm PN10)", "quantity": 100, "unit": "meters", "cost": 2100},
+    {"item": "PVC fittings and valves", "quantity": 1, "unit": "set", "cost": 1200},
+    {"item": "Cement for tank base", "quantity": 4, "unit": "bags", "cost": 900},
+    {"item": "Solar-rated cable and conduit", "quantity": 1, "unit": "set", "cost": 1500},
+    {"item": "Safety rope and clamps", "quantity": 1, "unit": "set", "cost": 300},
+    {"item": "Non-return valve", "quantity": 1, "unit": "unit", "cost": 250},
+    {"item": "Float valve", "quantity": 1, "unit": "unit", "cost": 180}
   ],
-  "total_cost": 19130,
+  "total_cost": 32000,
   "tools": [
+    "Measuring tape",
+    "Spirit level",
     "Shovel / spade",
-    "Level",
-    "Drill + bits for brackets",
+    "Wheelbarrow",
     "Adjustable wrench set",
     "Wire cutters / strippers",
-    "Measuring tape",
-    "Safety gloves & glasses"
+    "Multimeter",
+    "Safety gloves & glasses",
+    "Concrete mixer (or manual mixing)",
+    "Pipe cutter"
   ],
   "steps": [
     {
-      "title": "Test Borehole Depth and Water Level",
-      "description": "Drop a weighted string down the borehole. Mark water level. Ensure pump will be submerged at least 1m below water level but 2m above bottom."
+      "title": "Site Assessment & Preparation",
+      "description": "Mark a 4m × 4m service zone around borehole. Identify solar exposure zone (true north, minimal shading). Mark foundation for tank (minimum 2.5m × 2.5m).",
+      "substeps": [
+        "Measure borehole depth, static water level, and recovery rate",
+        "Inspect casing integrity and borehole diameter (to confirm pump size compatibility)",
+        "Record GPS coordinates and site orientation for solar alignment",
+        "Document with photos of borehole head and surrounding area"
+      ]
     },
     {
-      "title": "Prepare Tank Platform",
-      "description": "Level ground area 3m x 3m. Mix concrete (1:3:6 ratio). Create 100mm thick slab. Let cure 24 hours minimum."
+      "title": "Construct Tank Base",
+      "description": "Excavate 100mm deep footprint. Compact ground with layer of gravel. Mix and pour concrete slab (1:3:6 cement:sand:stone).",
+      "substeps": [
+        "Excavate 100mm deep footprint",
+        "Compact ground with layer of gravel",
+        "Mix and pour concrete slab (1:3:6 cement:sand:stone)",
+        "Level surface; cure for 48 hours",
+        "Optionally reinforce with rebar mesh (5mm)"
+      ]
     },
     {
-      "title": "Install Solar Panel Frame",
-      "description": "Mount panels facing north at 30° angle. Use treated timber frame or metal brackets. Secure against strong winds typical in Beaufort West."
+      "title": "Assemble Solar Panel Frame",
+      "description": "Use galvanized angle iron or 50×50mm square tubing. Tilt ~30° (latitude of Western Cape ~33°).",
+      "substeps": [
+        "Use galvanized angle iron or 50×50mm square tubing",
+        "Tilt ~30° (latitude of Western Cape ~33°)",
+        "Anchor with concrete footings or ground bolts",
+        "Allow easy cable routing to control box (≤10m run)"
+      ]
     },
     {
-      "title": "Connect Electrical System",
-      "description": "Wire panels in series to controller. Connect controller to pump with waterproof connections. Test voltage before connecting pump."
+      "title": "Install Electrical System",
+      "description": "Mount MPPT controller in waterproof housing near borehole head. Connect solar panels → controller → pump.",
+      "substeps": [
+        "Mount MPPT controller in waterproof housing near borehole head",
+        "Connect solar panels → controller → pump",
+        "Include fuses and disconnect switch between panel & controller",
+        "Ground entire system to steel rod",
+        "Run pump cable inside conduit for protection"
+      ]
     },
     {
-      "title": "Install Submersible Pump",
-      "description": "Attach safety rope to pump. Connect discharge pipe and electrical cable. Lower carefully into borehole. Secure cables at wellhead."
+      "title": "Lower Submersible Pump",
+      "description": "Attach 32mm HDPE pipe to pump outlet with stainless clamps. Add non-return valve at outlet.",
+      "substeps": [
+        "Attach 32mm HDPE pipe to pump outlet with stainless clamps",
+        "Add non-return valve at outlet",
+        "Tie safety rope to pump handle",
+        "Lower pump to approx. 2–3m above borehole bottom",
+        "Secure cables and ropes neatly at borehole head"
+      ]
     },
     {
-      "title": "Connect Piping to Tank",
-      "description": "Run 40mm pipe from borehole to tank inlet. Install float valve at tank. Add overflow pipe directing water away from tank base."
+      "title": "Connect to Storage Tank",
+      "description": "Install tank inlet and float valve. Run HDPE line from pump outlet to tank.",
+      "substeps": [
+        "Install tank inlet and float valve",
+        "Run HDPE line from pump outlet to tank",
+        "Secure with brackets and unions",
+        "Fit overflow pipe to direct excess away from base"
+      ]
     },
     {
-      "title": "Install Distribution System",
-      "description": "Connect outlet valve at tank base. Run pipes to kitchen, shower, and garden areas. Install taps at each point."
+      "title": "Outlet Distribution",
+      "description": "Connect 25mm outlet pipe from tank to tap point(s). Include a ball valve for isolation.",
+      "substeps": [
+        "Connect 25mm outlet pipe from tank to tap point(s)",
+        "Include a ball valve for isolation",
+        "Optionally install a sediment filter for potable use"
+      ]
     },
     {
-      "title": "Test and Commission",
-      "description": "Check all connections for leaks. Monitor pump operation for 2 hours. Adjust float valve. Document flow rate."
+      "title": "Testing & Commissioning",
+      "description": "Confirm correct polarity and system wiring. Run test pump cycle at midday for optimal sun.",
+      "substeps": [
+        "Confirm correct polarity and system wiring",
+        "Run test pump cycle at midday for optimal sun",
+        "Check flow rate, leaks, float valve operation",
+        "Verify solar output via MPPT display"
+      ]
+    },
+    {
+      "title": "Documentation & Handover",
+      "description": "Record installation date, serial numbers, warranty info. Provide owner with quick-reference sheet.",
+      "substeps": [
+        "Record installation date, serial numbers, warranty info",
+        "Mark electrical polarity on all leads",
+        "Provide owner with quick-reference sheet for pump operation and maintenance"
+      ]
     }
   ],
   "tips": [
-    "Install a bypass valve at the pump to allow manual filling during cloudy periods using a generator if needed.",
-    "Label all pipes for future maintenance.",
-    "Keep extra fittings and pipe for emergency repairs."
+    "💡 Keep controller and junction boxes sealed against moisture",
+    "💡 Inspect solar panel brackets every 3 months",
+    "💡 Flush tank annually to prevent algae",
+    "💡 Clean panels every 2–3 weeks (soft cloth, no abrasives)",
+    "💡 Keep spare fuse, float valve, and 2m extra HDPE pipe onsite",
+    "💡 Preorder all solar components to avoid shipping delays",
+    "💡 Confirm voltage compatibility between pump, controller, and panel array before wiring",
+    "💡 Document each stage with photos"
   ],
   "safety": [
-    "Always disconnect solar panels before handling electrical connections.",
-    "Wear gloves and safety glasses when handling cement or tools.",
-    "Ensure the tank stand is level and solid to prevent tipping."
+    "⚠️ Always disconnect solar panels before handling electrical connections",
+    "⚠️ Wear gloves and safety glasses when handling cement or tools",
+    "⚠️ Ensure the tank stand is level and solid to prevent tipping",
+    "⚠️ Keep children and pets away from work area during installation",
+    "⚠️ Check all seals and fittings before commissioning"
+  ],
+  "suppliers": [
+    {
+      "category": "Solar Pumps & Kits",
+      "supplier": "Sustainable.co.za",
+      "website": "https://www.sustainable.co.za",
+      "notes": "Solar submersible pump kits"
+    },
+    {
+      "category": "Borehole & Tank Equipment",
+      "supplier": "Waterpumps-solarpumps.co.za",
+      "website": "https://waterpumps-solarpumps.co.za",
+      "notes": "Pumpman Bovem 70 (500W 48V)"
+    },
+    {
+      "category": "Piping & Tanks",
+      "supplier": "Agrimark / Builders / Plumblink",
+      "website": "https://www.agrimark.co.za",
+      "notes": "HDPE pipe, JoJo tanks"
+    },
+    {
+      "category": "Electrical Components",
+      "supplier": "ACDC Dynamics / Voltex",
+      "website": "https://www.acdc.co.za",
+      "notes": "Solar-rated cable, fuse boxes"
+    },
+    {
+      "category": "General Hardware",
+      "supplier": "Mica / BUCO",
+      "website": "https://www.mica.co.za",
+      "notes": "Tools and general supplies"
+    }
   ],
   "estimated_time_hours": 16,
   "images": [
-    "images/water/pump_install.jpg",
-    "images/water/solar_panels.jpg",
-    "images/water/tank_setup.jpg"
+    "images/water/borehole_assessment.jpg",
+    "images/water/tank_base_construction.jpg",
+    "images/water/solar_panel_frame.jpg",
+    "images/water/electrical_wiring.jpg",
+    "images/water/pump_installation.jpg",
+    "images/water/tank_connection.jpg",
+    "images/water/testing_system.jpg"
+  ],
+  "cost_breakdown": {
+    "borehole_pump_controller": "9500-18000",
+    "solar_panels_mounting": "4000-6000",
+    "tank": "3800-4000",
+    "concrete_materials": "800-1200",
+    "piping_fittings": "2500-4000",
+    "electrical_protection": "1000-2000",
+    "labour": "3000-6000",
+    "total_range": "25000-40000"
+  },
+  "deliverables": [
+    "Working solar-powered borehole water system",
+    "Installed 2,500L tank with concrete base",
+    "Safe and tested electrical & plumbing system",
+    "Maintenance plan and documentation",
+    "Verified flow rate and borehole performance"
   ]
 }

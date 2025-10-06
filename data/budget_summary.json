@@ -1,30 +1,46 @@
 {
   "phases": [
     {
-      "phase": "Pre-Purchase",
-      "estimated_cost": 36000,
-      "notes": "Transfer costs and initial legal fees"
+      "phase": "Property Purchase",
+      "estimated_cost": 556000,
+      "notes": "R520,000 purchase price + R36,000 transfer costs (conveyancing, registration, legal)"
     },
     {
       "phase": "Phase 1 - Essentials",
-      "estimated_cost": 43120,
-      "notes": "Water, shelter, sanitation, security, kitchen, chickens, garden"
+      "estimated_cost": 40200,
+      "notes": "Shelter (tents + gazebo): R12,000; Water system: R5,200; Sanitation: R5,000; Security fencing: R10,000; Chicken coop + livestock: R8,000"
     },
     {
       "phase": "Phase 2 - Expansion",
-      "estimated_cost": 75000,
-      "notes": "Additional fencing, livestock, expanded kitchen & living structures"
+      "estimated_cost": 45000,
+      "notes": "Extended fencing, expanded livestock pens, additional canvas structures, solar lighting"
     },
     {
-      "phase": "Phase 3 - Secondary Infrastructure",
-      "estimated_cost": 120000,
-      "notes": "Long-term canvas structures, orchard, irrigation, secondary water storage"
+      "phase": "Phase 3 - Operational",
+      "estimated_cost": 40000,
+      "notes": "Vegetable plots expansion, irrigation system, sanitation upgrades, operational infrastructure"
     },
     {
-      "phase": "Phase 4 - Full Homestead Setup",
-      "estimated_cost": 200000,
-      "notes": "All remaining infrastructure, advanced livestock pens, solar upgrade, guest areas"
+      "phase": "Phase 4 - Long-term Homestead",
+      "estimated_cost": 125000,
+      "notes": "Full perimeter fencing (21ha), permanent structures, advanced livestock, income-generating facilities"
     }
   ],
-  "total_estimated_cost": 473120
+  "total_estimated_cost": 806200,
+  "property_details": {
+    "location": "8 km from Beaufort West, Western Cape",
+    "size_hectares": 21,
+    "purchase_price": 520000,
+    "transfer_costs": 36000,
+    "existing_infrastructure": [
+      "Borehole (partially equipped)",
+      "Two 5,000L water tanks on stand",
+      "Shipping container structure"
+    ]
+  },
+  "financing": {
+    "pre_approved_loan": 750000,
+    "total_investment": 606727,
+    "remaining_budget": 143273
+  }
 }

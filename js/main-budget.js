@@ -328,29 +328,40 @@ async function loadSection(sectionName) {
     state.currentSection = sectionName;
     
     try {
-        const response = await fetch(`${CONFIG.dataPath}${sectionName}.json`);
+        console.log(`Attempting to fetch: ${CONFIG.dataPath}${sectionName}.json`);
         
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-        
-        const data = await response.json();
-        
-        // Cache the data
-        if (CONFIG.cacheEnabled) {
-            state.cache.set(sectionName, data);
-        }
-        
-        // Render content
-        elements.contentDiv.innerHTML = renderContent(data);
-        
-        // Render budget information
-        renderSectionBudget(data);
-        
-        state.isLoading = false;
+        fetch(`${CONFIG.dataPath}${sectionName}.json`)
+            .then(response => {
+                console.log('Response status:', response.status);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(`Successfully loaded data for section: ${sectionName}`);
+                console.log('Data keys:', Object.keys(data));
+                
+                // Cache the data
+                if (CONFIG.cacheEnabled) {
+                    state.cache.set(sectionName, data);
+                }
+                
+                // Render content
+                elements.contentDiv.innerHTML = renderContent(data);
+                
+                // Render budget information
+                renderSectionBudget(data);
+                
+                state.isLoading = false;
+            })
+            .catch(error => {
+                console.error(`Error in fetch chain for "${sectionName}":`, error);
+                showError(`Failed to load "${sectionName}" section. ${error.message}`);
+            });
         
     } catch (error) {
-        console.error(`Error loading section "${sectionName}":`, error);
+        console.error(`Error setting up fetch for "${sectionName}":`, error);
         showError(`Failed to load "${sectionName}" section. ${error.message}`);
     }
 }
@@ -401,6 +412,8 @@ function handleTabClick(event) {
  * Initialize the application
  */
 function init() {
+    console.log('Initializing Phase 1 application...');
+    
     // Check if required elements exist
     if (!elements.contentDiv) {
         console.error('Content div not found. Make sure element with id="content" exists.');
@@ -412,6 +425,8 @@ function init() {
         return;
     }
     
+    console.log(`Found ${elements.tabs.length} tabs`);
+    
     // Add ARIA attributes for accessibility
     elements.tabs.forEach((tab, index) => {
         tab.setAttribute('role', 'tab');
@@ -419,6 +434,7 @@ function init() {
         tab.addEventListener('click', handleTabClick);
     });
     
+    console.log('Loading default section: water');
     // Load default section
     loadSection(CONFIG.defaultSection);
 }
