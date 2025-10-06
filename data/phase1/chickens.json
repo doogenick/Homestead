@@ -2,14 +2,14 @@
   "title": "🌱 Garden & Chickens Setup (Days 11-13)",
   "goal": "Establish a small productive garden and chicken area to provide fresh vegetables, herbs, and eggs for the family.",
   "materials": [
-    { "name": "Chicken coop (4m x 3m)", "cost": "R3,500", "quantity": 1 },
-    { "name": "20–30 laying hens", "cost": "R2,500", "quantity": 1 batch },
-    { "name": "Chicken feed (20kg bags)", "cost": "R350", "quantity": 3 },
-    { "name": "Water troughs for chickens", "cost": "R450", "quantity": 2 },
-    { "name": "Seeds (vegetables & herbs)", "cost": "R600", "quantity": 1 batch },
-    { "name": "Garden tools (spade, hoe, rake, watering can)", "cost": "R800", "quantity": 1 set },
-    { "name": "Compost / mulch", "cost": "R300", "quantity": 1 cubic meter" },
-    { "name": "Netting / fencing for garden", "cost": "R650", "quantity": 20 meters }
+    { "item": "Chicken coop (4m x 3m)", "quantity": 1, "unit": "coop", "cost": 3500 },
+    { "item": "Laying hens", "quantity": 25, "unit": "hens", "cost": 2500 },
+    { "item": "Chicken feed (20kg bags)", "quantity": 3, "unit": "bags", "cost": 350 },
+    { "item": "Water troughs for chickens", "quantity": 2, "unit": "troughs", "cost": 450 },
+    { "item": "Seeds (vegetables & herbs)", "quantity": 1, "unit": "batch", "cost": 600 },
+    { "item": "Garden tools (spade, hoe, rake, watering can)", "quantity": 1, "unit": "set", "cost": 800 },
+    { "item": "Compost / mulch", "quantity": 1, "unit": "cubic meter", "cost": 300 },
+    { "item": "Netting / fencing for garden", "quantity": 20, "unit": "meters", "cost": 650 }
   ],
   "tools": [
     "Shovel / spade",

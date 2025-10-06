@@ -21,6 +21,39 @@
  * }
  */
 
+// ============================================
+// CONFIGURATION
+// ============================================
+const CONFIG = {
+    dataPath: 'data/phase1/',
+    defaultSection: 'water',
+    cacheEnabled: true
+};
+
+// ============================================
+// STATE MANAGEMENT
+// ============================================
+const state = {
+    cache: new Map(),
+    currentSection: null,
+    isLoading: false,
+    currentBudget: null
+};
+
+// ============================================
+// DOM ELEMENTS
+// ============================================
+const elements = {
+    tabs: document.querySelectorAll('.tab'),
+    contentDiv: document.getElementById('content'),
+    budgetSection: document.getElementById('budget-section'),
+    budgetDisplay: document.getElementById('section-budget-display')
+};
+
+// ============================================
+// UTILITY FUNCTIONS
+// ============================================
+
 /**
  * Format currency (South African Rand)
  */
@@ -41,6 +74,98 @@ function escapeHtml(text) {
 }
 
 /**
+ * Show loading state
+ */
+function showLoading() {
+    if (!elements.contentDiv) return;
+    elements.contentDiv.innerHTML = '<div class="loading">Loading content</div>';
+    state.isLoading = true;
+}
+
+/**
+ * Show error message
+ */
+function showError(message) {
+    if (!elements.contentDiv) return;
+    elements.contentDiv.innerHTML = `
+        <div class="warning">
+            <strong>⚠️ Error Loading Content</strong>
+            <p>${escapeHtml(message)}</p>
+            <p>Please check the console for more details.</p>
+        </div>
+    `;
+    state.isLoading = false;
+}
+
+// ============================================
+// BUDGET FUNCTIONS
+// ============================================
+
+/**
+ * Calculate budget for a section
+ */
+function calculateSectionBudget(data) {
+    if (!data.materials || !Array.isArray(data.materials)) {
+        return 0;
+    }
+    
+    return data.materials.reduce((total, material) => {
+        const cost = typeof material.cost === 'number' ? material.cost : 0;
+        const quantity = material.quantity || 1;
+        return total + (cost * quantity);
+    }, 0);
+}
+
+/**
+ * Render budget information for a section
+ */
+function renderSectionBudget(data) {
+    if (!elements.budgetDisplay) return;
+    
+    const sectionBudget = calculateSectionBudget(data);
+    
+    if (sectionBudget <= 0) {
+        elements.budgetDisplay.innerHTML = '<p>No budget information available</p>';
+        return;
+    }
+    
+    let html = `
+        <div class="section-budget-summary">
+            <p><strong>Total Cost:</strong> <span class="cost-amount">${formatCurrency(sectionBudget)}</span></p>
+        </div>
+    `;
+    
+    if (data.materials && data.materials.length > 0) {
+        html += '<h4>📦 Material Breakdown</h4><ul class="budget-materials">';
+        data.materials.forEach(material => {
+            const cost = typeof material.cost === 'number' ? material.cost : 0;
+            const quantity = material.quantity || 1;
+            const itemTotal = cost * quantity;
+            
+            // Build display text with quantity
+            let displayText = material.item || material.name || 'Unnamed item';
+            if (quantity > 1) {
+                displayText += ` (${quantity}x ${formatCurrency(cost)})`;
+            }
+            displayText += ` — ${formatCurrency(itemTotal)}`;
+            
+            html += `
+                <li>
+                    <span class="material-name">${displayText}</span>
+                </li>
+            `;
+        });
+        html += '</ul>';
+    }
+    
+    elements.budgetDisplay.innerHTML = html;
+}
+
+// ============================================
+// CONTENT RENDERING
+// ============================================
+
+/**
  * Render materials section
  */
 function renderMaterials(materials, totalCost) {
@@ -52,7 +177,15 @@ function renderMaterials(materials, totalCost) {
         const cost = typeof mat.cost === 'number' ? mat.cost : 0;
         const quantity = mat.quantity || 1;
         const itemTotal = cost * quantity;
-        html += `<li>${item} — <span class="cost">${formatCurrency(itemTotal)}</span></li>`;
+        
+        // Build display text with quantity
+        let displayText = item;
+        if (quantity > 1) {
+            displayText += ` (${quantity}x ${formatCurrency(cost)})`;
+        }
+        displayText += ` — <span class="cost">${formatCurrency(itemTotal)}</span>`;
+        
+        html += `<li>${displayText}</li>`;
     });
     html += '</ul>';
     
@@ -166,6 +299,9 @@ function renderContent(data) {
     html += renderSafety(data.safety);
     html += renderImages(data.images);
     
+    // Store budget data for rendering
+    state.currentBudget = data;
+    
     return html;
 }
 
@@ -207,6 +343,10 @@ async function loadSection(sectionName) {
         
         // Render content
         elements.contentDiv.innerHTML = renderContent(data);
+        
+        // Render budget information
+        renderSectionBudget(data);
+        
         state.isLoading = false;
         
     } catch (error) {
@@ -221,6 +361,7 @@ async function loadSection(sectionName) {
 function renderFromCache(sectionName) {
     const data = state.cache.get(sectionName);
     elements.contentDiv.innerHTML = renderContent(data);
+    renderSectionBudget(data);
     state.currentSection = sectionName;
 }
 
@@ -287,67 +428,4 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
 } else {
     init();
-}
-
-// ============================================
-// BUDGET LOADING (for budget_summary.json)
-// ============================================
-
-/**
- * Load budget summary data
- */
-async function loadBudgetSummary() {
-    try {
-        const response = await fetch('data/budget_summary.json');
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-
-        const data = await response.json();
-        displayBudgetSummary(data);
-    } catch (error) {
-        console.error('Error loading budget summary:', error);
-        // Fallback: show error in table
-        const tbody = document.querySelector('#budgetTable tbody');
-        if (tbody) {
-            tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; color: #e74c3c;">Error loading budget data</td></tr>';
-        }
-    }
-}
-
-/**
- * Display budget summary in table
- */
-function displayBudgetSummary(data) {
-    const tbody = document.querySelector('#budgetTable tbody');
-    const totalCostElement = document.getElementById('totalCost');
-
-    if (!tbody || !totalCostElement) {
-        console.warn('Budget table elements not found');
-        return;
-    }
-
-    // Clear existing content
-    tbody.innerHTML = '';
-    let total = 0;
-
-    // Add each phase row
-    data.phases.forEach(phase => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-            <td>${phase.phase}</td>
-            <td>R${phase.estimated_cost.toLocaleString('en-ZA')}</td>
-            <td>${phase.notes}</td>
-        `;
-        tbody.appendChild(tr);
-        total += phase.estimated_cost;
-    });
-
-    // Update total
-    totalCostElement.textContent = `R${total.toLocaleString('en-ZA')}`;
-}
-
-// Auto-load budget summary if on index page
-if (document.getElementById('budgetTable')) {
-    loadBudgetSummary();
 }

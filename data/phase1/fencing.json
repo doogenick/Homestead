@@ -2,15 +2,15 @@
   "title": "🔒 Security & Fencing (Days 5-6)",
   "goal": "Establish an immediate secure perimeter around the main living area to protect family, livestock, and equipment. Expandable in later phases.",
   "materials": [
-    { "name": "Y-standard fence posts (2.1m, 40 units)", "cost": "R2,800", "quantity": 40 },
-    { "name": "Diamond mesh fencing (1.8m x 30m rolls, 4 rolls)", "cost": "R3,200", "quantity": 4 },
-    { "name": "Barbed wire (2 strands top, 500m)", "cost": "R650", "quantity": 1 },
-    { "name": "Gate kit (3m vehicle gate)", "cost": "R1,850", "quantity": 1 },
-    { "name": "Concrete for posts (15 bags)", "cost": "R750", "quantity": 15 },
-    { "name": "Wire tensioners and clips", "cost": "R350", "quantity": 1 },
-    { "name": "Solar security lights (4 units with sensors)", "cost": "R1,200", "quantity": 4 },
-    { "name": "Staple gun & staples", "cost": "R200", "quantity": 1 },
-    { "name": "Hammer & post driver", "cost": "R0", "quantity": 1 }
+    { "item": "Y-standard fence posts (2.1m)", "quantity": 40, "unit": "posts", "cost": 2800 },
+    { "item": "Diamond mesh fencing (1.8m x 30m rolls)", "quantity": 4, "unit": "rolls", "cost": 3200 },
+    { "item": "Barbed wire (2 strands top, 500m)", "quantity": 1, "unit": "roll", "cost": 650 },
+    { "item": "Gate kit (3m vehicle gate)", "quantity": 1, "unit": "kit", "cost": 1850 },
+    { "item": "Concrete for posts", "quantity": 15, "unit": "bags", "cost": 750 },
+    { "item": "Wire tensioners and clips", "quantity": 1, "unit": "set", "cost": 350 },
+    { "item": "Solar security lights with sensors", "quantity": 4, "unit": "units", "cost": 1200 },
+    { "item": "Staple gun & staples", "quantity": 1, "unit": "set", "cost": 200 },
+    { "item": "Hammer & post driver", "quantity": 1, "unit": "set", "cost": 0 }
   ],
   "tools": [
     "Tape measure",

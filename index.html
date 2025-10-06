@@ -69,7 +69,46 @@
                     <li><strong>Phase 1 Focus:</strong> Shelter, water, sanitation, security, kitchen, and basic garden/livestock setup</li>
                 </ul>
             </section>
+
+            <section id="project-budget-summary">
+                <h2>💰 Project Cost Overview</h2>
+                <div class="budget-overview">
+                    <div class="total-budget">
+                        <span class="label">Total Project Budget</span>
+                        <span class="amount" id="project-total">Calculating...</span>
+                    </div>
+                </div>
+                <div id="budget-summary-container"></div>
+                <div class="budget-actions">
+                    <button class="btn" onclick="exportProjectBudget()">📥 Export Budget</button>
+                </div>
+            </section>
+
+            <section id="budget">
+                <h2>💰 Homestead Budget Overview</h2>
+                <table id="budgetTable">
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Estimated Cost (ZAR)</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <th id="totalCost"></th>
+                            <th></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
         </main>
     </div>
+
+    <script src="js/budget.js"></script>
+    <script src="js/project-budget.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

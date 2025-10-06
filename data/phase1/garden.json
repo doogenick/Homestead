@@ -1,14 +1,45 @@
 {
-  "title": "Vegetable Garden & Planting (Days 8-10)",
+  "title": "🌱 Garden & Planting (Days 8-10)",
+  "goal": "Establish a small productive garden to provide fresh vegetables, herbs, and eggs for the family.",
   "materials": [
-    {"name": "Raised garden beds (4 units)", "cost": "R1,200"},
-    {"name": "Compost (2m³)", "cost": "R600"},
-    {"name": "Seeds (various vegetables)", "cost": "R400"},
-    {"name": "Watering cans or hose", "cost": "R350"},
-    {"name": "Mulch (bark or straw)", "cost": "R250"},
-    {"name": "Garden tools (spade, fork, hoe)", "cost": "R450"}
+    {"item": "Raised garden beds", "quantity": 4, "unit": "beds", "cost": 1200},
+    {"item": "Compost", "quantity": 2, "unit": "cubic meters", "cost": 600},
+    {"item": "Seeds (various vegetables)", "quantity": 1, "unit": "batch", "cost": 400},
+    {"item": "Watering cans or hose", "quantity": 1, "unit": "set", "cost": 350},
+    {"item": "Mulch (bark or straw)", "quantity": 1, "unit": "bag", "cost": 250},
+    {"item": "Garden tools (spade, fork, hoe)", "quantity": 1, "unit": "set", "cost": 450}
+  ],
+  "tools": [
+    "Shovel / spade",
+    "Hoe",
+    "Rake",
+    "Watering can or hose",
+    "Wheelbarrow",
+    "Pruning shears",
+    "Gloves"
   ],
   "steps": [
-    {"title": "Prepare garden beds", "description": "Level ground and place raised beds. Ensure good sunlight exposure."},
-    {"title": "Add soil and compost", "description": "Fill beds with 50% soil, 50% compost mixture."},
-    {"title": "Plant seeds or seedlings", "description": "Follow spacing guidelines for each plant. Water g
+    {
+      "title": "Prepare garden beds",
+      "description": "Level ground and place raised beds. Ensure good sunlight exposure."
+    },
+    {
+      "title": "Add soil and compost",
+      "description": "Fill beds with 50% soil, 50% compost mixture."
+    },
+    {
+      "title": "Plant seeds or seedlings",
+      "description": "Follow spacing guidelines for each plant. Water gently after planting."
+    }
+  ],
+  "tips": [
+    "💡 Companion planting improves yields and deters pests.",
+    "💡 Use mulch around garden beds to retain moisture.",
+    "💡 Rotate crops in the garden to avoid soil depletion."
+  ],
+  "safety": [
+    "Wear gloves when handling soil, compost, or manure.",
+    "Keep tools away from children."
+  ],
+  "estimated_time_hours": 8
+}

@@ -2,15 +2,15 @@
   "title": "🍳 Kitchen & Gazebo Setup (Days 8-10)",
   "goal": "Establish a functional cooking and food prep area with shelter from sun and rain, near water and storage areas for convenience.",
   "materials": [
-    { "name": "Heavy-duty gazebo frame (3m x 3m)", "cost": "R2,500", "quantity": 1 },
-    { "name": "Tarpaulin cover (6m x 4m)", "cost": "R750", "quantity": 1 },
-    { "name": "Portable camping stove / gas burner", "cost": "R1,500", "quantity": 1 },
-    { "name": "Metal table for prep", "cost": "R800", "quantity": 1 },
-    { "name": "Storage shelves / crates", "cost": "R1,000", "quantity": 3 },
-    { "name": "Waterproof containers for food storage", "cost": "R500", "quantity": 5 },
-    { "name": "Compost bin / bucket for organic waste", "cost": "R250", "quantity": 1 },
-    { "name": "Cutting boards, knives, utensils", "cost": "R600", "quantity": 1 set },
-    { "name": "Fire extinguisher (2kg)", "cost": "R400", "quantity": 1 }
+    { "item": "Heavy-duty gazebo frame (3m x 3m)", "quantity": 1, "unit": "frame", "cost": 2500 },
+    { "item": "Tarpaulin cover (6m x 4m)", "quantity": 1, "unit": "cover", "cost": 750 },
+    { "item": "Portable camping stove / gas burner", "quantity": 1, "unit": "unit", "cost": 1500 },
+    { "item": "Metal table for prep", "quantity": 1, "unit": "table", "cost": 800 },
+    { "item": "Storage shelves / crates", "quantity": 3, "unit": "units", "cost": 1000 },
+    { "item": "Waterproof containers for food storage", "quantity": 5, "unit": "containers", "cost": 500 },
+    { "item": "Compost bin / bucket for organic waste", "quantity": 1, "unit": "bin", "cost": 250 },
+    { "item": "Cutting boards, knives, utensils", "quantity": 1, "unit": "set", "cost": 600 },
+    { "item": "Fire extinguisher (2kg)", "quantity": 1, "unit": "unit", "cost": 400 }
   ],
   "tools": [
     "Hammer",

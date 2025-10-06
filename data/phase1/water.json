@@ -4,16 +4,16 @@
   "days": "1-2",
   "goal": "Ensure reliable access to potable water for family, garden, and livestock using the borehole and solar-powered pumping system.",
   "materials": [
-    {"item": "Solar submersible pump kit (24V, 3m³/hr minimum)", "cost": 8500},
-    {"item": "2x 100W solar panels with mounting brackets", "cost": 3200},
-    {"item": "MPPT solar controller (24V, 20A)", "cost": 1200},
-    {"item": "2500L JoJo tank with stand", "cost": 3500},
-    {"item": "40mm HDPE pipe (100m roll)", "cost": 850},
-    {"item": "Various fittings (elbows, tees, valves)", "cost": 650},
-    {"item": "Cable (submersible rated, 50m)", "cost": 450},
-    {"item": "Float valve for tank", "cost": 180},
-    {"item": "Basic water filter", "cost": 320},
-    {"item": "Cement for tank base (4 bags)", "cost": 280}
+    {"item": "Solar submersible pump kit (24V, 3m³/hr minimum)", "quantity": 1, "unit": "kit", "cost": 8500},
+    {"item": "2x 100W solar panels with mounting brackets", "quantity": 2, "unit": "panels", "cost": 3200},
+    {"item": "MPPT solar controller (24V, 20A)", "quantity": 1, "unit": "unit", "cost": 1200},
+    {"item": "2500L JoJo tank with stand", "quantity": 1, "unit": "tank", "cost": 3500},
+    {"item": "40mm HDPE pipe (100m roll)", "quantity": 1, "unit": "roll", "cost": 850},
+    {"item": "Various fittings (elbows, tees, valves)", "quantity": 1, "unit": "set", "cost": 650},
+    {"item": "Cable (submersible rated, 50m)", "quantity": 1, "unit": "length", "cost": 450},
+    {"item": "Float valve for tank", "quantity": 1, "unit": "unit", "cost": 180},
+    {"item": "Basic water filter", "quantity": 1, "unit": "unit", "cost": 320},
+    {"item": "Cement for tank base (4 bags)", "quantity": 4, "unit": "bags", "cost": 280}
   ],
   "total_cost": 19130,
   "tools": [

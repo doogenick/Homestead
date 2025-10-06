@@ -1,0 +1,30 @@
+{
+  "phases": [
+    {
+      "phase": "Pre-Purchase",
+      "estimated_cost": 36000,
+      "notes": "Transfer costs and initial legal fees"
+    },
+    {
+      "phase": "Phase 1 - Essentials",
+      "estimated_cost": 43120,
+      "notes": "Water, shelter, sanitation, security, kitchen, chickens, garden"
+    },
+    {
+      "phase": "Phase 2 - Expansion",
+      "estimated_cost": 75000,
+      "notes": "Additional fencing, livestock, expanded kitchen & living structures"
+    },
+    {
+      "phase": "Phase 3 - Secondary Infrastructure",
+      "estimated_cost": 120000,
+      "notes": "Long-term canvas structures, orchard, irrigation, secondary water storage"
+    },
+    {
+      "phase": "Phase 4 - Full Homestead Setup",
+      "estimated_cost": 200000,
+      "notes": "All remaining infrastructure, advanced livestock pens, solar upgrade, guest areas"
+    }
+  ],
+  "total_estimated_cost": 473120
+}
